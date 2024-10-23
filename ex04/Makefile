@@ -22,7 +22,6 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME) && echo "\033[0;31mRemoved executable 🗑️\033[0m"
-	@rm outfile && echo "\033[0;31mRemoved outfile 🗑️\033[0m"
 
 re: fclean all
 

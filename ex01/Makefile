@@ -4,7 +4,7 @@ OPTIONS = -c
 SRC =	main.cpp \
 		Zombie.cpp \
 		zombieHorde.cpp
-NAME = zombie_horde
+NAME = zombieHorde
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -12,7 +12,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "\033[0;32m🎉COMPILATION SUCCESS🥳\033[0m"
-	@echo "\033[0;33mUsage: Run ./zombie_horde. If you dare...\033[0m"
+	@echo "\033[0;33mUsage: Run ./zombieHorde. If you dare...\033[0m"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

@@ -1,7 +1,14 @@
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : name(name), weapon(NULL), HasWeapon(false){} // The constructor only needs one argument (name), but
+HumanB::HumanB(std::string name) : weapon(NULL), HasWeapon(false) // The constructor only needs one argument (name), but
 // will also initialize weapon and HasWeapon as this is necessary. Like in a struct, every attribute must be initialized.
+{
+	if (name.empty())
+		this->name = "HumanB";
+	else
+		this->name = name;
+}
+
 HumanB::~HumanB(){}
 
 void	HumanB::attack(void)

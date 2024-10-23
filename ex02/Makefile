@@ -2,7 +2,7 @@ CC = c++
 CFLAGS = -g -Wall -Wextra -Werror -std=c++98
 OPTIONS = -c
 SRC =	main.cpp
-NAME = ptr_and_ref
+NAME = PtrAndRef
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "\033[0;32m🎉COMPILATION SUCCESS🥳\033[0m"
-	@echo "\033[0;33mUsage: Run ./ptr_and_ref to gain some new insights on references and pointers!\033[0m"
+	@echo "\033[0;33mUsage: Run ./PtrAndRef to gain some new insights on references and pointers!\033[0m"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

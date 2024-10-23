@@ -5,7 +5,7 @@ SRC =	HumanA.cpp \
 		HumanB.cpp \
 		Weapon.cpp \
 		main.cpp
-NAME = unnecessary_violence
+NAME = unnecessaryViolence
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "\033[0;32m🎉COMPILATION SUCCESS🥳\033[0m"
-	@echo "\033[0;33mUsage: Grab some popcorn and run ./unnecessary_violence\033[0m"
+	@echo "\033[0;33mUsage: Grab some popcorn and run ./unnecessaryViolence\033[0m"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

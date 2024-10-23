@@ -20,7 +20,7 @@ int	main(int argc, char **argv)
 	std::ifstream InfileFD(InfileName);
 	if (!InfileFD)
 	{
-		std::cerr << "Error: Could not open the file " << InfileName << std::endl;
+		std::cerr << "Error: Could not open the file '" << InfileName << "'. Please make sure it exists." << std::endl;
 		return (2);
 	}
 
