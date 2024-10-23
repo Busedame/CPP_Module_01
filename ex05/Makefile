@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 OPTIONS = -c
 SRC =	main.cpp \
 		Harl.cpp
-NAME = harl_complains
+NAME = harlComplains
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -11,7 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "\033[0;32m🎉COMPILATION SUCCESS🥳\033[0m"
-	@echo "\033[0;33mUsage: Usage: Run ./harl_complains and modify the 'main.cpp' file to test different complain modes.\033[0m"
+	@echo "\033[0;33mUsage: Usage: Run ./harlComplains and modify the 'main.cpp' file to test different complain modes.\033[0m"
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
